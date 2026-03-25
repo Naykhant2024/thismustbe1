@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Love Journey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <section id="stage-play" class="screen active">
+      <h1>ဘောလုံးကိုဆွဲပြီး ဒီထဲရောက်အောင်ပို့လိုက် မျက်လှည့်ပြမယ်</h1>
+      <p>ဘောလုံးပန်းရောင်အဝိုင်းထဲ ရောက်မှ အလုပ်ဆက်လုပ်မယ်ကွာ မြန်မြန်လုပ်</p>
+      <div class="play-area">
+        <div id="dropZone" class="drop-zone">ဒီမှာ ဒီမှာ</div>
+        <div id="ball" class="ball" draggable="true"></div>
+      </div>
+      <p id="playHint" class="hint">Tip: ဘောလုံးလေးကို အဝိုင်းထဲထည့်လိုက်နော်</p>
+    </section>
+
+    <section id="stage-letter1" class="screen">
+      <h1>ဘာမှမဟုတ်ပေမယ့် ဒါကရည်းစားစာ</h1>
+      <div class="letter-card">
+        <p>ချစ်ရပါသော တစ်ယောက်သောသူရေ</p>
+        <p> ကိုယ့်ရဲ့ကမ္ဘာကြီးကို မင်းနဲ့အကြည့်ချင်းဆုံမှ သတိထားမိခဲ့တယ်။ မင်းရဲ့အပြုံးလေးတွေက ရတဲ့ရောင်ခြည်နဲ့ ငါဘဝကိုရှေ့ဆက်ခဲ့တာပါ။ ယုံမလားမသိပေမယ့် မင်းအနားရှိနေရတာလေးက အရာရာ
+          အိပ်မက်တစ်ခုလိုပဲ။ ရင်ခုန်သံတွေအပြည့်နဲ့ ငေးကြည့်ရုံနဲ့ ပျော်ခဲံရတဲ့အချိန်တွေက တိုခဲ့ပေမယ့်ကိုယ့်စိတ်ထဲတော့ သက်ဆုံးထိတိုင် ရင်ထဲစွဲပြီး ရူးရချီရဲ့ကွယ်။ အလင်းတန်းလေးတစ်ခုလို ကိုယ့်ရင်ထဲထားပြီး အသက်နဲ့အမျှ 
+          ချစ်မိသွားခဲ့တာပါပဲ။ 
+        </p>
+        <p>အရာအားလုံးကိုဖယ်လိုက်ရင်တောင် မင်းကိုယ့်အပေါ် ချစ်တယ်ဆိုတဲ့ ခံစားချက် ရှိမယ်မလားဟင်</p>
+      </div>
+      <div class="button-row">
+        <button id="accept1" class="btn">အင်း၊ ရှိတယ် </button>
+        <button id="deny1" class="btn alt">ရှိချင်လည်းရှိမယ် မသိသေးဘူး </button>
+        <button id="backToPlay1" class="btn small alt">Back to Game</button>
+      </div>
+    </section>
+
+    <section id="stage-denied" class="screen">
+      <h1>ဟော စောစောကတည်းက ရှိတယ်ပြောရင် ရည်းစားစာတစ်ခါပဲဖတ်ရမှာ </h1>
+      <p>ထားလိုက်ပါ။ နောက်တစ်စောင်ထပ်ဖတ်ရမယ်</p>
+      <div class="letter-card">
+        <p>အချစ်ရဆုံး</p>
+        <p>အချစ်ဆိုတာ ဗြုန်းခနဲ ဒိုင်းခနဲမေးလို့ ဖြေနိုင်တာမျိုးမဟုတ်ဘူးလို့ ကိုယ်ယုံပါတယ်။ အချိန်ယူပြီး တွေးကြည့်ပေါ့ကွယ်။
+          ကိုယ့်အပေါ်ချစ်ရင်တော့ နှစ်ခါမစဉ်းစားဘဲ တစ်သက်စာ ပုံအပ်နိုင်မယ့်သူမျိုးပါ
+        </p>
+        <p>အစကပြန်စကြမလား</p>
+      </div>
+      <div class="button-row">
+        <button id="accept2" class="btn">လက်ခံပါပြီ (လိုက်မရှာနဲ့ လက်မခံဘူးဆိုတာမထည့်ထားဘူး)</button>
+        <button id="backToPlay2" class="btn small alt">အစကို ပြန်သွားမယ်</button>
+      </div>
+    </section>
+
+    <section id="stage-celebrate" class="screen">
+      <h1>ဟီး ဟီး သိသားပဲကို </h1>
+      <p>လိုချင်တဲ့အဖြေရတာပဲ ကျေနပ်ပါပြီ</p>
+      <div class="celebration">✨🎉🎊💘</div>
+      <div class="button-row">
+        <button id="restart" class="btn small">နောက်တစ်ခါပြန်လုပ်မယ်</button>
+        <button id="backToPlay3" class="btn small alt">အစကို ပြန်သွားမယ်</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
